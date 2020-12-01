@@ -1,0 +1,38 @@
+<head>
+    {% load static %}
+    <!-- Prism CSS -->
+    <link href="{% static "tinymce/css/prism.css" %}" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript for Materialize CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">Films</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Page Principal</a></li>
+                <li><a href="/enregistrer">Enregistrer</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        {% for n in netfeelex %}
+        <div class="col s12 m6 l4">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">{{n.Titre_film}}</span>
+                    <p>{{n.Contenu_film| safe }}</p>
+                    <p style="font-size:70%">{{n.Date_publication |safe}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Prism JS -->
+    <script src="{% static "tinymce/js/prism.js" %}"></script>
+</body>
