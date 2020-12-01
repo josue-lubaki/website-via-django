@@ -1,0 +1,10 @@
+{% extends "main/header.html" %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{formulaire.as_p}}
+    <button style="background-color: rgb(9, 128, 25); color: white;" type="submit" class="btn btn-outline-info">connexion</button>
+</form>
+Si vous n'avez pas un compte, <a href="/subscribe"><strong>enregistrez-vous</strong></a>
+{% endblock %}
