@@ -6,7 +6,6 @@ from django.db import models # recuperer les models de la base ded des données
 
     # Pour permuter l'ordre d'affichage de section
 class NetfeelexAdmin(admin.ModelAdmin):
-    #fields = ["Titre_film", "Date_publication", "Contenu_film"]
     fieldsets = [
         ("Titre/Date",{"fields" : ["Titre_film","Date_publication"]}),
         ("Content", {"fields" : ["Contenu_film"]})

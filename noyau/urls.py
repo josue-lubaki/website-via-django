@@ -11,5 +11,6 @@ urlpatterns = [
     path("", views.homepage, name="homepage"),
     path("subscribe/", views.subscribe, name="subscribe"),
     path("logout/", views.logout_request, name="logout"),
-    path("connexion", views.demandeConnexion, name="connexion"),
+    path("connexion/", views.demandeConnexion, name="connexion"),
+    path("account/", views.account, name="account"),
 ]
