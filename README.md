@@ -2,6 +2,7 @@
 
 - Langage Utilisé : Python
 - FrameWork Utilisé : Django
+#
 
 * Le Site est connecté à une Base de données integrée de Django, et permet de Recupérer les films (Nom, Categorie et date de sortie) pour les afficher sur le HomePage
 * Le site a une page d'inscription, de Connexion hormis la page de Home.
