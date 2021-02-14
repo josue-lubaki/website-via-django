@@ -9,7 +9,7 @@
 * L'Utilisateur dit entré son Username et son mot de psse pour se connecté au compte.
 
 ## Création Projet Django
-$ django-admin startproject mysite
+$ django-admin startproject Mysite
 
 ## Demarrer Server Django
 $ python manage.py runserver
